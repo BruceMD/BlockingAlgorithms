@@ -107,7 +107,7 @@ def first_and_fathers_tuple(file_directory):
 
 def full(file_directory):
 
-    # first name, father's name, case report number, DOB, phone number
+    # case report number, DOB, first name, father's name,  phone number
 
     names_list = []
 

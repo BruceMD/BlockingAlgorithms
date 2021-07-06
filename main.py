@@ -9,7 +9,7 @@ from test import soundex_first_name_only, soundex_first_fathers_name, \
     dmetaphone_test_first_name_only, dmetaphone_test_first_fathers_name, \
     jw_similarity_first_names_only, jw_similarity_first_fathers_names
 from blocking_rules import rule1, rule2, rule3, rule4, rule5, rule6, rule7, rule8, rule9, rule10, rule11, rule12, \
-    rule13, rule14, rule15, rule16, rule17, rule18, rule19, rule20, rule21, rule8_1, rule8_2, rule22, rule23
+    rule13, rule14, rule15, rule16, rule17, rule18, rule19, rule20, rule21, rule8_1, rule8_2, rule22, rule23, rule24
 from jaro_similarity_algorithm import jaro_sim
 # from jaro_winkler_java_algorithm import jaro_sim
 from time import time

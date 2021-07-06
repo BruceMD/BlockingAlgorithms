@@ -5,7 +5,9 @@ from jaro_winkler_similarity_algorithm import jaro_sim
 from levenshtein_distance_algorithm import edit_distance
 from fastDamerauLevenshtein import damerauLevenshtein as dlev
 from Levenshtein import distance
+from levenshtein_distance_algorithm import edit_distance
 from damerau_levenshtein import damerau_levenshtein_distance_improved as dld
+#from testLeven import distance
 
 
 def rps(bool1, bool2, bool3):
@@ -370,9 +372,9 @@ def rule7(directory):
     for i in range(size):
         for j in range(i + 1, size):
             match = id_list[i][:12] == id_list[j][:12]
-            if rps(distance(names_list[i], names_list[j]) <= 2,
-                   distance(fathers_names_list[i], fathers_names_list[j]) <= 2,
-                   distance(town_list[i], town_list[j]) <= 2):
+            if rps(edit_distance(names_list[i], names_list[j]) <= 2,
+                   edit_distance(fathers_names_list[i], fathers_names_list[j]) <= 2,
+                   edit_distance(town_list[i], town_list[j]) <= 2):
                 if match:
                     tp += 1
                 else:
@@ -420,9 +422,9 @@ def rule8(directory):
     for i in range(size):
         for j in range(i + 1, size):
             match = id_list[i][:12] == id_list[j][:12]
-            if rps(distance(names_list[i], names_list[j]) <= 1,
-                   distance(fathers_names_list[i], fathers_names_list[j]) <= 1,
-                   distance(town_list[i], town_list[j]) <= 1):
+            if rps(edit_distance(names_list[i], names_list[j]) <= 1,
+                   edit_distance(fathers_names_list[i], fathers_names_list[j]) <= 1,
+                   edit_distance(town_list[i], town_list[j]) <= 1):
                 if match:
                     tp += 1
                 else:
