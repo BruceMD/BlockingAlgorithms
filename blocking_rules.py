@@ -7,7 +7,6 @@ from fastDamerauLevenshtein import damerauLevenshtein as dlev
 from Levenshtein import distance
 from levenshtein_distance_algorithm import edit_distance
 from damerau_levenshtein import damerau_levenshtein_distance_improved as dld
-#from testLeven import distance
 
 
 def rps(bool1, bool2, bool3):
